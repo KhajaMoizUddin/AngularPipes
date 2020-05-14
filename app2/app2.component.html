@@ -1,0 +1,88 @@
+
+<!--Uppercase-->
+<h3>{{this.firstName | uppercase}}</h3>
+<h3>{{this.lastName | uppercase}}</h3>
+<h3>{{this.fullName | uppercase}}</h3>
+
+<!--Lowercase-->
+<h3>{{this.firstName | lowercase}}</h3>
+<h3>{{this.lastName | lowercase}}</h3>
+<h3>{{this.fullName | lowercase}}</h3>
+
+<!--Titlecase-->
+<h3>{{this.firstName | titlecase}}</h3>
+<h3>{{this.lastName | titlecase}}</h3>
+<h3>{{this.fullName | titlecase}}</h3>
+
+<!--Slice-->
+<h3>{{this.fullName | slice:4}}</h3>
+<h3>{{this.fullName | slice:0:4}}</h3>
+
+<!--JSON-->
+<h3>{{this.employeeList | json}}</h3>
+<h3>{{this.employeeInfo | json}}</h3>
+
+<!--Percent-->
+<h3 ngNonBindable>{{this.percentage1 | percent}}</h3>
+<h3>{{this.percentage1 | percent}}</h3>
+<h3>{{this.percentage2 | percent}}</h3>
+<h3>{{this.percentage3 | percent}}</h3>
+<h3>{{this.percentage1 + this.percentage1 + percentage2 | percent}}</h3>
+<h3>{{this.percentage1 + this.percentage3 | percent}}</h3>
+<h3>{{this.percentage2 + this.percentage2 |percent}}</h3>
+
+<!--Date-->
+<h3>{{this.todaysDate | date}}</h3>
+<h3>{{this.joiningDate | date}}</h3>
+<h3>{{this.DOB | date}}</h3>
+<h3>{{this.todaysDate | date:'MM/dd/yyyy'}}</h3>
+<h3>{{this.todaysDate |date:'dd/MM/yyyy'}}</h3>
+<h3>{{this.todaysDate | date:'dd/MM/yy'}}</h3>
+<h3>{{this.todaysDate | date : 'short'}}</h3>
+<h3>{{this.todaysDate | date: 'shortTime'}}</h3>
+<h3>{{this.todaysDate | date: 'shortDate'}}</h3>
+
+<h3>{{this.todaysDate | date:'medium'}}</h3>
+<h3>{{this.todaysDate | date:'mediumDate'}}</h3>
+<h3>{{this.todaysDate | date: 'mediumTime'}}</h3>
+<h3>{{this.todaysDate | date: 'long'}}</h3>
+<h3>{{this.todaysDate | date: 'longTime'}}</h3>
+<h3>{{this.todaysDate | date:'longDate'}}</h3>
+<h3>{{this.todaysDate | date:'fullTime'}}</h3>
+<h3>{{this.todaysDate | date: 'fullDate'}}</h3>
+<h3>{{this.todaysDate | date:'full'}}</h3>
+<h3>{{this.todaysDate | date:'hh:mm:ss a'}}</h3>
+<h3>{{this.todaysDate | date:'hh:mm P'}}</h3>
+
+
+<!--Currency-->
+<h3>{{this.salary | currency:'INR':false}}</h3>
+<h3>{{this.salary | currency:'INR':true}}</h3>
+<h3>{{this.salary | currency:'EUR':false}}</h3>
+<h3>{{this.salary | currency:'EUR':true}}</h3>
+<h3>{{this.salary | currency:'USD':false}}</h3>
+<h3>{{this.salary | currency:'USD':true}}</h3>
+<h3>{{this.salary | currency:'GBP':false}}</h3>
+<h3>{{this.salary | currency:'GBP':true}}</h3>
+
+<!--Number-->
+<h3>{{this.decimalNumber | number:'2.3-4'}}</h3>
+
+<p ngNonBindable>{{ 3.14159265 | number: '3.1-2' }}</p>
+    <p>{{ 3.14159265 | number: '3.1-2' }}</p>
+
+    <p ngNonBindable>{{ 3.14159265 | number: '1.4-4' }}</p>
+    <p>{{ 3.14159265 | number: '1.4-4' }}</p>
+
+    <p ngNonBindable>{{ 3.14159265 | number: '3.2-4' }}</p>
+    <p>{{ 3.14159265 | number: '3.2-4' }}</p>
+
+    <p ngNonBindable>{{ 3.14159265 | number: '1.3-4' }}</p>
+    <p>{{ 3.14159265 | number: '1.7-7' }}</p>
+
+    <!--Custom Pipes-->
+    <h3>{{this.firstName | reverseString}}</h3>
+    <h3>{{this.lastName | reverseString}}</h3>
+    <h3>{{this.fullName | reverseString}}</h3>
+    <h3>{{this.fullName | prefixWithMr}}</h3>
+    <h3>{{'19 - 04 - 1989' | hyphenWithSlash}}</h3>

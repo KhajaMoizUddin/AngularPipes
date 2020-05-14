@@ -1,0 +1,173 @@
+<!--UPPERCASE PIPES-->
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.FirstName}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.FirstName | uppercase}}</h4>
+<hr>
+
+<h4>Before Applying Uppercase Pipes: {{this.LastName}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.LastName | uppercase}}</h4>
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.EmployeeName}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.EmployeeName | uppercase}}</h4>
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.EmployeeAddress}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.EmployeeAddress | uppercase}}</h4>
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.City}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.City | uppercase}}</h4>
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.City}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.City | uppercase}}</h4>
+<hr>
+<h4>Before Applying Uppercase Pipes: {{this.CompanyName}}</h4>
+<h4>After Applying Uppercase Pipes: {{this.CompanyName | uppercase}}</h4>
+<hr>
+<!--LOWERCASE PIPES-->
+<h4>Before Applying Lowercase Pipes: {{this.FirstName | uppercase}}</h4>
+<h4>After Applying Lowercase Pipes: {{this.FirstName | lowercase}}</h4>
+<hr>
+<h4>Before Applying Lowercase Pipes: {{this.LastName | uppercase}}</h4>
+<h4>After Applying Lowercase Pipes: {{this.LastName | lowercase}}</h4>
+<hr>
+<h4>Before Applying Lowercase Pipes: {{this.EmployeeName | uppercase}}</h4>
+<h4>After Applying Lowercase Pipes: {{this.EmployeeName | lowercase}}</h4>
+<hr>
+
+<!--TITLE CASE PIPES-->
+<h4>Before Applying Titlecase Pipes: {{this.FirstName}}</h4>
+<h4>After Applying Titlecase Pipes: {{this.FirstName | titlecase}}</h4>
+<hr>
+<h4>Before Applying Titlecase Pipes: {{this.LastName}}</h4>
+<h4>After Applying Titlecase Pipes: {{this.LastName | titlecase}}</h4>
+<hr>
+<h4>Before Applying Titlecase Pipes: {{this.EmployeeName}}</h4>
+<h4>After Applying Titlecase Pipes: {{this.EmployeeName | titlecase}}</h4>
+<hr>
+<h4>Before Applying Titlecase Pipes: {{this.EmployeeAddress}}</h4>
+<h4>After Applying Titlecase Pipes: {{this.EmployeeAddress | titlecase}}</h4>
+<hr>
+<h4>Before Applying titlecase Pipes: {{this.City}}</h4>
+<h4>After Applying titlecase Pipes: {{this.City | titlecase}}</h4>
+<hr>
+<h4>Before Applying titlecase Pipes: {{this.CompanyName}}</h4>
+<h4>After Applying titlecase Pipes: {{this.CompanyName | titlecase}}</h4>
+<hr>
+
+<!--SLICE PIPES-->
+<h4>Before Applying Slice Pipes: {{this.CompanyName}}</h4>
+<h4>After Applying Slice Pipes: {{this.CompanyName | slice:6 | titlecase}}</h4>
+<hr>
+<h4>Before Applying Slice Pipes: {{this.EmployeeName}}</h4>
+<h4>After Applying Slice Pipes: {{this.EmployeeName | slice:5 | titlecase}}</h4>
+<hr>
+
+<h4>Before Applying Slice(Start, End) Pipes: {{this.CompanyName}}</h4>
+<h4>After Applying Slice Pipes: {{this.CompanyName | slice: 0:13 | titlecase}}</h4>
+<hr>
+<h4>Before Applying Slice(Start,End) Pipes: {{this.EmployeeName}}</h4>
+<h4>After Applying Slice Pipes: {{this.EmployeeName | slice:5:14 | titlecase}}</h4>
+<hr>
+
+<!--JSON PIPES-->
+
+<h4 >Before Applying JSON Pipes:  {{this.employeeList}}</h4>
+<h4>After Applying JSON Pipes: {{this.employeeList | json}}</h4>
+<hr>
+
+<h4>Before Applying JSON Pipes:  {{this.studentList}}</h4>
+<h4>After Applying JSON Pipes: {{this.studentList | json}}</h4>
+<hr>
+
+<!--NUMBER PIEPES-->
+<h4 >Before Applying Number Pipes:  {{this.EmployeeId}}</h4>
+<h4>After Applying Number Pipes: {{this.EmployeeId | number : '1.2'}}</h4>
+<hr>
+
+<h4>Before Applying Number Pipes:  {{this.EmployeePhone}}</h4>
+<h4>After Applying Number Pipes: {{this.EmployeePhone | number : '1.2'}}</h4>
+<hr>
+
+<h4>Before Applying Number Pipes:  {{this.Salary}}</h4>
+<h4>After Applying Number Pipes: {{this.Salary | number : '1.2'}}</h4>
+<hr>
+
+<!--PERCENTAGE PIPE-->
+<h4 >Before Applying Percentage Pipes:  {{this.EmployeeId}}</h4>
+<h4>After Applying Percentage Pipes: {{this.EmployeeId | number : '1.2'}}</h4>
+<hr>
+
+<h4 >Before Applying Percentage Pipes:  {{this.percentage1}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage1 | percent}}</h4>
+<hr>
+<h4 >Before Applying Percentage Pipes:  {{this.percentage2}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage2 | percent}}</h4>
+<hr>
+<h4 >Before Applying Percentage Pipes:  {{this.percentage3}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage3 | percent}}</h4>
+<hr>
+<h4 >Before Applying Percentage Pipes:  {{this.percentage3}}+{{this.percentage2}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage3 + this.percentage2 | percent}}</h4>
+<hr>
+<h4 >Before Applying Percentage Pipes:  {{this.percentage1}}+{{this.percentage2}} + {{this.percentage2}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage1 + this.percentage2 + this.percentage2 | percent}}</h4>
+<hr>
+<h4 >Before Applying Percentage Pipes:  {{this.percentage1}}+{{this.percentage1}}</h4>
+<h4>After Applying Percentage Pipes: {{this.percentage1 + this.percentage1 | percent}}</h4>
+<hr>
+
+
+
+<!--Example for Date-->
+
+<h4>Before Applying Date: {{this.todaysDate}}</h4>
+<h4>{{this.todaysDate | date: "MM/dd/yyyy"}}</h4>
+<h4>{{this.todaysDate | date: "dd/MM/yyyy"}}</h4>
+<h4>{{this.todaysDate | date: "dd/MM/yy"}}</h4>
+
+<h4>Short: {{this.todaysDate | date: "short"}}</h4>
+<h4>ShortDate: {{this.todaysDate | date: "shortDate"}}</h4>
+<h4>ShortTime: {{this.todaysDate | date: "shortTime"}}</h4>
+
+<h4>Long: {{this.todaysDate | date: "long"}}</h4>
+<h4>Long: {{this.todaysDate | date: "longDate"}}</h4>
+<h4>Long: {{this.todaysDate | date: "hh:mm:ss a"}}</h4>
+
+<h4>{{this.todaysDate | date: "fullDate"}}</h4>
+
+ <h4>Medium: {{this.todaysDate | date: "medium"}}</h4>
+ <h4>Medium: {{this.todaysDate | date: "mediumDate"}}</h4>
+ <h4>Medium: {{this.todaysDate | date: "mediumTime"}}</h4>
+
+
+<h4>Medium:-{{DateOfBirth | date:"medium"}}</h4><br/>
+<h4>Short:-{{DateOfBirth | date:"short"}}</h4>
+<h4>Specific Date Format:-{{DateOfBirth | date:"dd/MM/yyyy"}}</h4><br/>
+<h4>Short Time format:-{{DateOfBirth | date:"shortTime"}}</h4><br/>
+<h4>Medium Time:-{{DateOfBirth | date:"mediumTime"}}</h4><br/>
+<h4>Medium Date format:- {{DateOfBirth | date:"mediumDate"}}</h4><br/>
+<h4>Full Date Format:- {{DateOfBirth | date:"fullDate"}}</h4>
+
+
+ <!--CURRENCY PIPES-->
+ <h3>{{this.Salary | currency}}</h3>
+ <h3>{{this.Salary | currency : 'INR'}}</h3>
+ <h3>{{this.Salary | currency : 'USD'}}</h3>
+ <h3>{{this.Salary | currency : 'EUR'}}</h3>
+ <h3>{{this.Salary | currency : 'EUR' : false}}</h3>
+ <h3>{{this.Salary | currency :"GBP"}}</h3>
+ <h3>{{this.Salary | currency :"GBP" : false}}</h3>
+
+ <h3> {{Salary | currency:'USD':true}}</h3>
+ <h3>USD Doller : {{Salary |currency:'USD':false}}</h3>
+ <h3>INR() : {{Salary |currency:'INR':true}}</h3>
+ <h3>INR : {{Salary |currency:'INR':false}}</h3>
+
+ <h3>{{this.EmployeeAddress | hyphenToSlash }} </h3>
+
+
+
+
+
+
+
+
